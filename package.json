@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "setup": "pm2 deploy deploy.json aliyun setup",
-    "deploy": "pm2 deploy deploy.json aliyun"
+    "deploy": "pm2 deploy deploy.json aliyun",
+    "update": "pm2 deploy deploy.json aliyun update"
   },
   "dependencies": {
     "express": "^4.16.3"
