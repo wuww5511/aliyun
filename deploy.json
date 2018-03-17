@@ -16,7 +16,7 @@
             "ref": "origin/master",
             "repo": "https://github.com/wuww5511/aliyun.git",
             "path": "/root/code/test",
-            "post-setup": "npm install && pm2 startOrRestart ecosystem.json",
+            "post-setup": "npm install && pm2 startOrRestart deploy.json",
             "post-deploy": "",
             "pre-setup": "rm -rf /root/code/test"
         }
