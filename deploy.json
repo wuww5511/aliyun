@@ -16,8 +16,7 @@
             "ref": "origin/master",
             "repo": "https://github.com/wuww5511/aliyun.git",
             "path": "/root/code/test",
-            "post-setup": "git pull && npm install && pm2 startOrRestart deploy.json",
-            "post-deploy": "",
+            "post-deploy": "git pull && npm install && pm2 startOrRestart deploy.json",
             "pre-setup": "rm -rf /root/code/test"
         }
     }
