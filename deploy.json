@@ -1,0 +1,16 @@
+{
+    "deploy": {
+        "aliyun": {
+            "user": "root",
+            "host": [
+                "wuweiwei.me"
+            ],
+            "ref": "origin/master",
+            "repo": "https://github.com/wuww5511/test.git",
+            "path": "/root/code/test",
+            "post-setup": "npm install",
+            "post-deploy": "echo asdf",
+            "pre-setup": ""
+        }
+    }
+}
