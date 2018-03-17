@@ -1,4 +1,12 @@
 {
+    "apps": [
+        {
+            "name": "server",
+            "script": "index.js",
+            "instances": "max",
+            "exec_mode": "cluster"
+        }
+    ],
     "deploy": {
         "aliyun": {
             "user": "root",
@@ -8,9 +16,9 @@
             "ref": "origin/master",
             "repo": "https://github.com/wuww5511/aliyun.git",
             "path": "/root/code/test",
-            "post-setup": "npm install",
-            "post-deploy": "echo asdf",
-            "pre-setup": ""
+            "post-setup": "npm install && pm2 startOrRestart ecosystem.json",
+            "post-deploy": "",
+            "pre-setup": "rm -rf /root/code/test"
         }
     }
 }
