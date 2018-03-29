@@ -9,6 +9,7 @@
     "update": "pm2 deploy deploy.json aliyun update"
   },
   "dependencies": {
+    "anyproxy": "^4.0.6",
     "express": "^4.16.3"
   }
 }

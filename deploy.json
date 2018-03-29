@@ -3,8 +3,13 @@
         {
             "name": "server",
             "script": "index.js",
-            "instances": "max",
+            "instances": 1,
             "exec_mode": "cluster"
+        },
+        {
+            "name": "proxy",
+            "script": "proxy.js",
+            "instances": 1
         }
     ],
     "deploy": {
